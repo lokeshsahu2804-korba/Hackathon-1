@@ -1,0 +1,147 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.parent{
+    /* border: 1px solid black; */
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas: "c1 c1 c1 c1"
+                         "c2 c2 c2 c2"
+                         "c2 c2 c2 c2"
+                         "c2 c2 c2 c2"
+                         "c2 c2 c2 c2"
+                         "c3 c3 c3 c3"
+                         "c3 c3 c3 c3"
+                         "c4 c4 c4 c4";
+
+}
+
+.logo h1:hover{
+    color: orchid;
+}
+
+.navbar{
+    grid-area: c1;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("https://i.pinimg.com/1200x/a6/6d/6e/a66d6e6d9bcc30a5fd5ddb9a562774aa.jpg");
+    font-size: 15px;
+    color: yellow;
+}
+
+.logo{
+    align-content: center;
+}
+
+.nav-content{
+    align-content: center;
+}
+
+
+.nav-content a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.nav-content a:hover{
+    color: rgba(6, 238, 165, 0.816);
+    text-decoration: underline;
+}
+
+.main-content{
+    grid-area: c2;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+
+
+
+.main-content h1{
+    text-align: center;
+}
+
+.main-content h1:hover{
+    color: blueviolet;
+}
+
+.card h2{
+    margin-left: 90px;
+}
+
+.card h2:hover{
+    color: blue;
+}
+
+.card a{
+    color: black;
+    text-decoration: none;
+}
+
+.card a:hover{
+    color: brown;
+}
+
+
+
+
+
+.card img{
+    height: 250px;
+    width: 250px;
+    
+}
+
+
+
+
+
+
+.secondary-content{
+    grid-area: c3;
+    /* border: 2px solid black; */
+    line-height: 1.6;
+    background-color: azure;
+    background-image: url("https://i.pinimg.com/1200x/dc/4f/35/dc4f350c640eb5287b6b4eef7588db95.jpg");
+    color: rgb(214, 237, 8);
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.content h1:hover{
+    color: blueviolet;
+
+}
+
+.footer{
+    height: 50px;
+    grid-area: c4;
+    /* border: 2px solid black; */
+    text-align: center;
+    align-content: center;
+    text-shadow: 1.6;
+    background-color: yellowgreen;
+}
+
+.footer:hover{
+    color: orangered;
+}
+}
